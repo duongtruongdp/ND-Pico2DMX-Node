@@ -51,6 +51,7 @@ For first installation or recovery of the Main Controller, use the RP2350 `.uf2`
 - 🚀 [Getting Started](docs/GETTING_STARTED.md)
 - 📦 [Installing the Firmware](docs/INSTALLATION.md)
 - 🔌 [Wiring](docs/WIRING.md)
+- 🔧 [Custom Hardware & GPIO Mapping](docs/CUSTOM_HARDWARE.md)
 - 🌐 [Network Setup](docs/NETWORK_SETUP.md)
 - 🖥️ [Dashboard](docs/DASHBOARD.md)
 - 🔄 [Firmware Update](docs/FIRMWARE_UPDATE.md)

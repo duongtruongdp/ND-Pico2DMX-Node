@@ -45,3 +45,7 @@ The following is proven internal production mapping. It is not required for norm
 | GND | RP GND ↔ C5 GND |
 
 This is developer / internal hardware reference, not an operator wiring requirement.
+
+## 🔧 Custom Hardware
+
+Building your own PCB or using a different GPIO layout? See [Custom Hardware & GPIO Mapping](CUSTOM_HARDWARE.md) for the source-accurate advanced guidance.
