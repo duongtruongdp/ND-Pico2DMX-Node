@@ -1,4 +1,4 @@
-# Troubleshooting
+# 🧰 Troubleshooting
 
 ## Dashboard does not open
 
@@ -39,10 +39,14 @@ Confirm the ESP32-C5 access point is visible as `ND-DMX-C5`, then verify the doc
 
 ## Firmware update fails
 
-- Confirm the correct `.bin` file is selected for the target board.
+- Confirm the correct `.bin` file is selected for the target controller.
 - Do not upload UF2 through the dashboard.
 - Keep power and Ethernet connected during the update.
 - Wait for the node to reboot before trying again.
 - Reconnect to the dashboard and check the reported firmware version.
 
-For advanced diagnosis, consult the source and archived bring-up tests. Operators should not need to debug PIO or SPI for normal use.
+> 🔧 **Main Controller recovery**
+>
+> If the Main Controller cannot boot or the dashboard cannot be reached after a firmware problem, follow [Main Controller — First Installation / Recovery](INSTALLATION.md#-main-controller--first-installation--recovery). Network connectivity problems should be investigated first when the controller is otherwise running.
+
+For advanced diagnosis, consult the source and archived bring-up tests. Operators should not need to debug internal transport details for normal use.

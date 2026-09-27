@@ -1,4 +1,4 @@
-# Wiring
+# 🔌 Wiring
 
 ## Normal connections
 
@@ -7,7 +7,7 @@ Lighting computer / console
         |
      Ethernet
         |
-   ND DMX NODE
+   ND Pico2DMX Node
      | | | |
      DMX outputs
      | | | |

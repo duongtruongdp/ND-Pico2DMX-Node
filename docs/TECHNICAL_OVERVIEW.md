@@ -1,6 +1,6 @@
-# Technical overview
+# ⚙️ Technical Overview
 
-## RP2350
+## RP2350 Main Controller
 
 The RP2350 is the authoritative controller. It provides:
 
@@ -9,9 +9,9 @@ The RP2350 is the authoritative controller. It provides:
 - Art-Net and sACN processing
 - configuration storage
 - four DMX engines
-- RP firmware update handling
+- RP2350 firmware update handling
 
-## ESP32-C5
+## ESP32-C5 Wi-Fi Module
 
 The ESP32-C5 provides:
 

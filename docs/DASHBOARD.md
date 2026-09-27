@@ -1,4 +1,4 @@
-# Dashboard guide
+# 🖥️ Dashboard
 
 The browser dashboard provides:
 
@@ -8,15 +8,17 @@ The browser dashboard provides:
 - Output Test
 - Firmware Update
 
-## Output tests
+## 🧪 Output tests
 
 - `FULL` sets the selected output to full for testing.
 - `BLACKOUT` sets the selected output to zero.
 - `NETWORK` returns control to Art-Net or sACN.
 
-**After testing an output, return it to `NETWORK` for normal operation.**
+> ⚠️ **Important**
+>
+> After testing an output, return it to `NETWORK` for normal operation.
 
-## Signal Merge
+## 🔀 Signal Merge
 
 - `Latest Signal (LTP)` uses the most recently received source.
 - `Highest Value (HTP)` uses the highest channel value.

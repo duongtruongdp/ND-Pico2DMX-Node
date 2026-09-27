@@ -1,6 +1,6 @@
-# ND Pico2DMX Node
+# 🎛️ ND Pico2DMX Node
 
-ND Pico2DMX Node is a compact network-to-DMX controller with four independent DMX outputs. It receives Art-Net or sACN over Ethernet or Wi-Fi and sends standard DMX to lighting fixtures.
+ND Pico2DMX Node is a compact four-output network-to-DMX controller. It receives Art-Net or sACN over Ethernet or Wi-Fi and converts network lighting data into four independent DMX outputs.
 
 ```text
 Lighting Console / Computer
@@ -19,58 +19,63 @@ Lighting Console / Computer
       +----------- DMX OUT 1
 ```
 
-Each output can use its own universe and protocol mode. The node includes direct Ethernet operation, Wi-Fi access through the ESP32-C5, a browser dashboard, FULL / BLACKOUT / NETWORK output testing, and dashboard firmware updates.
-
-## Features
+## ✨ Features
 
 - Four independent DMX outputs
-- Art-Net and sACN input over Ethernet or Wi-Fi
-- Per-output universe and protocol configuration
-- Browser dashboard for monitoring, testing, and firmware updates
-- RP2350 main controller with ESP32-C5 Wi-Fi control processor
+- Art-Net and sACN over Ethernet or Wi-Fi
+- Per-output universe assignment and input protocol selection
+- Browser-based dashboard
+- FULL, BLACKOUT, and NETWORK output testing
+- Signal merge options
+- Firmware update support
 
-## Dashboard
+## 🖥️ Dashboard
 
 ![ND Pico2DMX Node Dashboard](img/Dashboard.webp)
 
-The dashboard provides live system status, DMX output monitoring, configuration, test controls, and the controlled Ethernet update path for the main controller.
+The dashboard lets operators check controller status, assign universes, choose the network input protocol, test DMX outputs, configure Wi-Fi, and update firmware.
 
-## Current release
+## 🚀 Quick Start
+
+Follow [Getting Started](docs/GETTING_STARTED.md) for the normal setup flow. If your controller does not already have firmware installed, see [Installing the Firmware](docs/INSTALLATION.md).
+
+## 📦 Installation & Firmware
+
+For first installation or recovery of the Main Controller, use the RP2350 `.uf2` / BOOTSEL method. For normal updates, use the built-in web dashboard with the matching `.bin` file.
+
+- [Installing the Firmware](docs/INSTALLATION.md)
+- [Firmware Update](docs/FIRMWARE_UPDATE.md)
+
+## 📚 Documentation
+
+- 🚀 [Getting Started](docs/GETTING_STARTED.md)
+- 📦 [Installing the Firmware](docs/INSTALLATION.md)
+- 🔌 [Wiring](docs/WIRING.md)
+- 🌐 [Network Setup](docs/NETWORK_SETUP.md)
+- 🖥️ [Dashboard](docs/DASHBOARD.md)
+- 🔄 [Firmware Update](docs/FIRMWARE_UPDATE.md)
+- 🧰 [Troubleshooting](docs/TROUBLESHOOTING.md)
+- ⚙️ [Technical Overview](docs/TECHNICAL_OVERVIEW.md)
+- 📋 [Changelog](CHANGELOG.md)
+- 🎉 [Release Notes](docs/RELEASE_NOTES_v1.0.0.md)
+
+## 🏷️ Current Release
 
 **ND Pico2DMX Node v1.0.0**
 
 - Main Controller: `V3.6F5-RP2350`
-- Wi-Fi Controller: `V3.6A-C5`
+- Wi-Fi Module: `V3.6A-C5`
 - First GitHub release
 
-## Project status
+## 🛠️ Project Status
 
-The hardware-validated production baseline includes successful F4 → F5 Ethernet OTA validation and real-output verification.
+The production baseline is hardware-validated, including successful F4 → F5 Ethernet OTA validation and real-output verification.
 
-## Quick start
+## 📄 License
 
-Begin with the [Getting Started guide](docs/GETTING_STARTED.md), then review [Wiring and connections](docs/WIRING.md) and [Network setup](docs/NETWORK_SETUP.md).
+ND Pico2DMX Node is licensed under the [GNU General Public License v3.0](LICENSE).
 
-## Documentation
-
-- [Getting started](docs/GETTING_STARTED.md)
-- [Wiring and connections](docs/WIRING.md)
-- [Network setup](docs/NETWORK_SETUP.md)
-- [Dashboard guide](docs/DASHBOARD.md)
-- [Firmware updates](docs/FIRMWARE_UPDATE.md)
-- [Troubleshooting](docs/TROUBLESHOOTING.md)
-- [Technical overview](docs/TECHNICAL_OVERVIEW.md)
-- [Changelog](CHANGELOG.md)
-- [Release notes](docs/RELEASE_NOTES_v1.0.0.md)
-
-## Validated production baseline
-
-- RP2350: `V3.6F5-RP2350`
-- ESP32-C5: `V3.6A-C5`
-- Four physical DMX outputs validated
-- F4 → F5 RP Ethernet OTA validated on hardware
-
-Licensing is currently undecided; see [LICENSE](LICENSE).
+Third-party components remain subject to their respective licenses. See [Third-Party Licensing Notes](docs/LICENSES.md).
 
 ## Repository layout
 

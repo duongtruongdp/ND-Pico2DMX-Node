@@ -1,8 +1,8 @@
-# Network setup
+# 🌐 Network Setup
 
 ## Ethernet
 
-The RP2350 controller is reachable over direct Ethernet at:
+The RP2350 Main Controller is reachable over direct Ethernet at:
 
 ```text
 10.10.10.10
@@ -12,7 +12,7 @@ Open the address in a browser to reach the dashboard. The computer must be confi
 
 ## Wi-Fi
 
-The ESP32-C5 production access point is:
+The ESP32-C5 Wi-Fi Module production access point is:
 
 ```text
 SSID:      ND-DMX-C5
@@ -22,7 +22,7 @@ Address:   192.168.4.1
 
 Ethernet and Wi-Fi are two ways to reach and control the node. The RP2350 remains the authoritative controller and dashboard/API source.
 
-## Art-Net and sACN
+## 📡 Art-Net and sACN
 
 Art-Net and sACN are supported lighting-network protocols. Choose the protocol mode independently for each output:
 
